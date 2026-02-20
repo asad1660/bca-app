@@ -23,7 +23,11 @@ export const ImagePlaceholder = styled.View`
   justify-content: center;
   align-items: center;
 `;
-
+export const StyledImage = styled.Image`
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+`;
 export const ContentContainer = styled.View`
   flex: 1;
   justify-content: space-between;

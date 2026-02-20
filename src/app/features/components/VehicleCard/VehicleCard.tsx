@@ -12,6 +12,7 @@ import {
   Title,
   InfoText,
   FavouriteText,
+  StyledImage,
 } from "./VehicleCard.styles";
 
 type Props = {
@@ -28,7 +29,12 @@ export function VehicleCard({ vehicle, onToggleFavourite, onPress }: Props) {
   return (
     <CardContainer activeOpacity={0.8} onPress={onPress}>
       <ImagePlaceholder>
-        <Text>Image</Text>
+        <StyledImage
+          source={{
+            uri: "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800",
+          }}
+          resizeMode="cover"
+        />
       </ImagePlaceholder>
 
       <ContentContainer>
