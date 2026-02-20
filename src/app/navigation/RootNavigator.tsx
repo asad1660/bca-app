@@ -18,6 +18,7 @@ export function RootNavigator() {
         screenOptions={{
           headerTitleAlign: "center",
         }}
+        initialRouteName="VehicleList"
       >
         <Stack.Screen
           name="VehicleList"
